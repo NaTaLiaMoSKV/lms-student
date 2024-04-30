@@ -1,0 +1,36 @@
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  row-gap: 15px;
+}
+
+.nav-link-custom {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 40px;
+  color: #769c7f;
+  letter-spacing: 0.03em;
+  font-weight: 600;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom:focus,
+.nav-link-custom.active {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link-custom.disabled-link {
+  pointer-events: none;
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.nav-link-custom.disabled-link svg {
+  margin-right: 5px;
+  height: 18px;
+  width: 18px;
+}

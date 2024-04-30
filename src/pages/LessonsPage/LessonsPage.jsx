@@ -76,12 +76,14 @@ const LessonsTable = () => {
   return (
     <>
       {(isFetching || isLoading) && <Loader />}
-      <PaginationBlock
-        page={currentPage}
-        setPage={setCurrentPage}
-        pages={totalPages}
-      />
-      <div className="m-4">
+      <div className="m-4 mt-0 mb-2">
+        <PaginationBlock
+          page={currentPage}
+          setPage={setCurrentPage}
+          pages={totalPages}
+        />
+      </div>
+      <div className="m-4 mt-0">
         {filteredLessons?.length > 0 && (
           <TableStyled hover>
             <thead>

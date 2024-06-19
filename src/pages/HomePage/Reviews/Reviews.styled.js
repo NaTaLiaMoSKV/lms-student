@@ -1,9 +1,13 @@
 import styled from "styled-components";
+import { SectionDescription } from "../Homepage.styled";
 
 export const ReviewContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  width: calc(100vw - 40px);
+  margin-right: 20px;
+  margin-left: 20px;
 
   display: flex;
   overflow-x: scroll;
@@ -52,6 +56,12 @@ export const ReviewStyled = styled.div`
     border-radius: 50%;
     padding: 10px;
     width: 200px;
+  }
+`;
+
+export const ReviewSectionDescription = styled(SectionDescription)`
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
   }
 `;
 

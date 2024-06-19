@@ -4,8 +4,13 @@ import Loader from "components/Loader";
 import { useGetReviewsQuery } from "../../../redux/reviewApi";
 import { FaRegStar } from "react-icons/fa";
 import { GrNext, GrPrevious } from "react-icons/gr";
-import { NavButton, ReviewContainer, ReviewStyled } from "./Reviews.styled";
-import { SectionDescription, SectionTitle } from "../Homepage.styled";
+import {
+  NavButton,
+  ReviewContainer,
+  ReviewSectionDescription,
+  ReviewStyled,
+} from "./Reviews.styled";
+import { SectionTitle } from "../Homepage.styled";
 import { SectionContainer } from "styles/Section.styled";
 
 const MessageRating = styled.div`
@@ -44,7 +49,7 @@ const Reviews = () => {
     <section style={{ backgroundColor: "#fafafa" }}>
       <SectionContainer>
         {(isLoading || isFetching) && <Loader />}
-        <SectionDescription>Testimonials</SectionDescription>
+        <ReviewSectionDescription>Testimonials</ReviewSectionDescription>
         <SectionTitle>Our Student Testimonials</SectionTitle>
         <ReviewContainer ref={reviewContainerRef}>
           {reviews?.map((review, i) => (

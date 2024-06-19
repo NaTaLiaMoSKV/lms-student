@@ -20,7 +20,7 @@ const Navigation = () => {
   const navigate = useNavigate();
 
   const { data: stat } = useGetNotificationsStatQuery(null, {
-    pollingInterval: 60000,
+    pollingInterval: 5000,
     skipPollingIfUnfocused: true,
     skip: !user,
   });

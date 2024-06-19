@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
   position: relative;
-  margin-top: 40px;
   flex-shrink: 0;
   background-color: #282828;
   padding-top: 20px;

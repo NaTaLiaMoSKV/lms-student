@@ -75,7 +75,7 @@ const Courses = () => {
           </StatList>
         </div>
         <div>
-          <CourseContainer className="d-flex gap-4" ref={reviewContainerRef}>
+          <CourseContainer ref={reviewContainerRef}>
             {courses?.map((course, index) => (
               <CourseStyled key={index}>
                 <CourseTitle>{course.title}</CourseTitle>

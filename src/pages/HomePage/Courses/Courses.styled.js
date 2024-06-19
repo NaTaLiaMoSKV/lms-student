@@ -8,6 +8,9 @@ export const HeroSectionContainer = styled(SectionContainer)`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  width: calc(100vw - 40px);
+  margin-right: 20px;
+  margin-left: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -88,12 +91,17 @@ export const StatList = styled.ul`
 `;
 
 export const CourseContainer = styled(ReviewContainer)`
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(100vw - 60px);
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
+    width: 450px;
+    gap: 30px;
     margin: auto;
   }
 
@@ -103,8 +111,9 @@ export const CourseContainer = styled(ReviewContainer)`
 `;
 
 export const CourseWrapper = styled.div`
-  width: calc(100% - 40px);
+  // width: calc(100% - 20px);
   padding: 10px;
+  margin: 0;
   border: 1px solid #cbc9c9;
   background-color: #fff;
   border-radius: 10px;
